@@ -7,3 +7,4 @@ My Role in the Project:
 Sole designer and developer from conceptualization to exectuion. 
 
 Technologies used:
+• HTML • CSS • Bootstrap • Jquery • AJAX • JavaScript • PHP
