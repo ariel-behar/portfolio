@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Anton|Comfortaa:700|Fredoka+One|Saira');
 
+//VARIABLES
 //fonts
 $font1: 'Anton', sans-serif;
 $font2: 'Fredoka One', cursive;
@@ -14,19 +15,14 @@ $font7: 'Comfortaa', cursive;
 $primaryColor: #5CB85C;
 $elegantColor: #2E2E2E;
 $blackishColor: #2d2d2d;
+$headingColor: #d2d2d2;
 
 //patterns
 $pattern1: url("../img/downloaded/pattern1.jpg");
 $pattern2: url("../img/downloaded/pattern2.png");
 $pattern3: url("../img/downloaded/pattern3.png");
 
-   // changing the text highlighting color 
-     ::selection {
-       background: #706d6d; // WebKit/Blink Browsers 
-     }
-     ::-moz-selection {
-       background: #706d6d; // Gecko Browsers 
-     }
+//GLOBAL SETTINGS 
 
 h1 {
 	font-family: $font4;
@@ -40,7 +36,7 @@ h2 {
 h3 {
 	text-shadow: 2px 2px 6px rgba(0, 0, 0, 1);
 	font-family: $font4;
-	color: #d2d2d2;
+	color: $headingColor;
 }
 h4 {
 	font-family: $font4;
@@ -48,6 +44,11 @@ h4 {
 
 h5 {
 	font-family: $font4;
+}
+.small-section-heading {
+	font-size: 37px;
+	color: $headingColor;
+	text-shadow: 2px 2px 6px rgba(0, 0, 0, 1);
 }
 
 p, .dotted-scrollspy li {
@@ -58,6 +59,13 @@ p, .dotted-scrollspy li {
 .btn {
 	font-family: $font7;
 }
+
+.carousel .carousel-control-next-icon, .carousel .carousel-control-prev-icon {
+	height: 50px;
+	width: 50px;
+}
+
+//--/END GLOBAL SETINGS
 
 #project-content, #daniel-site-section {
  	ul li, a, h5 span {
@@ -181,6 +189,8 @@ p, .dotted-scrollspy li {
 		}
 		#go-to-site-btn {
 		display: none;
+		animation-duration:6s;
+		animation-delay:3.2s;
 		-webkit-animation-duration: 6s;
 		-webkit-animation-delay: 3.2s;
 		}
@@ -317,6 +327,94 @@ main {
 	
 }
 
+#psd-to-html-section {
+	border-top: 1px solid white;
+	video {
+		transform: rotate(-15deg);
+		top: 40px;
+	}
+	#tv-pic {
+		position: absolute;
+		top: 120px;
+		transform: rotate(-15deg);
+	}
+	#on-button, #off-button {
+		cursor: pointer;
+	}
+
+	.carousel-item img {
+		height: 300px;
+		width: auto!important;
+	}
+	.carousel-indicators {
+		position: initial;
+	}
+	#carousel-psd {
+		border: 2px solid #2E2E2E;
+		border-radius: 20px;
+		padding: 20px 0;
+
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b5b5b5+1,757575+39,2e2e2e+72,2e2e2e+100&0.35+0,0.6+100 */
+		background: -moz-linear-gradient(-45deg, rgba(181,181,181,0.35) 0%, rgba(181,181,181,0.35) 1%, rgba(117,117,117,0.45) 39%, rgba(46,46,46,0.53) 72%, rgba(46,46,46,0.6) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(-45deg, rgba(181,181,181,0.35) 0%,rgba(181,181,181,0.35) 1%,rgba(117,117,117,0.45) 39%,rgba(46,46,46,0.53) 72%,rgba(46,46,46,0.6) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(135deg, rgba(181,181,181,0.35) 0%,rgba(181,181,181,0.35) 1%,rgba(117,117,117,0.45) 39%,rgba(46,46,46,0.53) 72%,rgba(46,46,46,0.6) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#59b5b5b5', endColorstr='#992e2e2e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+		.carousel-indicators li:first-child {
+			display: block;
+		}
+		h5 {
+			line-height: 28px;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	#psd-to-html-section #tv-pic {
+		top: 150px;
+		video {
+			transform: rotate(-15deg);
+			top: 40px;
+		}
+	}
+}
+@media (min-width: 1024px) {
+	#psd-to-html-section #tv-pic {
+		top: 140px;
+	}
+}
+@media (min-width: 1200px) {
+	#psd-to-html-section #tv-pic {
+		top: 120px;
+	}
+}
+
+@media (min-width: 1366px) {
+	#psd-to-html-section #tv-pic {
+		top: 120px;
+	}
+}
+
+
+.psd-to-html-modal {
+	.modal-header, .modal-footer, .modal-body { 
+	background-image: $pattern1;
+	background-repeat: repeat;
+	}
+	.modal-body {
+		ul li, a, h5 span {
+			text-shadow: 1px 1px 7px rgba(0, 0, 0, 1);
+			
+		}
+		ul li,p, h5 span {
+			color: $primaryColor;
+		}
+		img {
+			border-bottom: 1px solid white;
+		}
+	}
+}
+
+
 #third-section {
 	border-top: 1px solid white;
 	border-bottom: 1px solid white;
@@ -404,6 +502,10 @@ main {
 			.modal-title {
 				color: black;
 			}
+		}
+
+		.modal-body {
+			background-color: #323232;
 		}
 
 		.modal-footer {
@@ -521,9 +623,6 @@ footer {
 		h4 {
 			font-size: 35px; 
 			
-		}
-		p {
-
 		}
 		a {
 			font-weight: normal;
