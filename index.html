@@ -192,9 +192,7 @@
 				<div class="row">
 					<div class="col-md-8 flex-column">
 						<h3>About Me</h3>
-						<p>Aspiring full-stack web developer. Multilingual and self-taught in a variety of programming languages and technologies.
-							Passionate about both front and back end development. Highly reliable and self-propelled to success and professionalism
-							with a constant hunger for knowledge and improvement.</p>
+						<p>Front-end (aspiring full-stack) web developer. Multilingual and self-taught in a variety of programming languages and technologies. Passionate about both front and back end-development. Highly reliable and self-propelled to success and professionalism with a constant hunger for knowledge and improvement.</p>
 						<div class="row pt-1 mb-0">
 							<div class="col-12">
 								<h3 class="d-inline-block">Languages</h3>
@@ -343,7 +341,7 @@
 						<h4 class="mb-1 text-center small-section-heading">PSD TO HTML</h4>
 						<div class="row">
 							<div class="col-10 offset-1">
-								<p class="text-justify">This section attempts to highlight my ability to work with Adobe Photoshop and accurately recreate websites from a PSD file into HTML format.  </p>
+								<p class="text-justify">This section focuses on my ability to work with Adobe Photoshop and accurately recreate websites from a PSD file into HTML format.  </p>
 								<video class="embed-responsive embed-responsive-16by9 z-depth-3 mb-3 hidden-sm-down" poster="img/downloaded/icons/psd-to-html5.png" loop muted="true" autoplay="true" id="psd-to-html-video">
 									<source class="embed-responsive-item" src="video/design.mp4" type="video/mp4">
 									<source class="embed-responsive-item" src="video/design.webm" type="video/webm">
@@ -361,10 +359,34 @@
 							<ol class="carousel-indicators">
 								<li data-target="#carousel-psd" data-slide-to="0" class="active"></li>
 								<li data-target="#carousel-psd" data-slide-to="1"></li>
-								<!-- <li data-target="#carousel-psd" data-slide-to="2"></li> -->
+								<li data-target="#carousel-psd" data-slide-to="2"></li>
 							</ol>
 							<div class="carousel-inner" role="listbox">
 								<div class="carousel-item active">
+									<div class="container">
+										<div class="row">
+											<div class="col-md-12">
+												<a href="" data-toggle="modal" data-target="#florida-dental-clinic-modal">
+													<img src="img/downloaded/florida-dental-clinic.jpg" alt="Florida Dental Clinic" class="img-fluid mx-auto">
+												</a>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12">
+												<h4 class='text-center my-1'>
+													<b>Florida Dental Clinic</b>
+												</h4>
+												<h5 class="text-center h5-responsive">
+													<a href="" data-toggle="modal" data-target="#florida-dental-clinic-modal" class="d-inline-block">Project Description </a>
+													<span class="">|</span>
+													<a href="http://florida-dental-clinic.arielbehar.com/" target="_blank" class="d-inline-block">Visit Project's Site</a>
+												</h5>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="carousel-item">
 									<div class="container">
 										<div class="row">
 											<div class="col-md-12">
@@ -430,6 +452,62 @@
 
 
 			<!-- PSD TO HTML CAROUSEL MODALS -->
+			<!-- Florida Dental Clinic Modal -->
+			<div class="modal fade psd-to-html-modal" id="florida-dental-clinic-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+				aria-hidden="true">
+				<div class="modal-dialog modal-lg" role="document">
+					<!--Content-->
+					<div class="modal-content">
+						<!--Header-->
+						<div class="modal-header">
+							<h4 class="modal-title w-100 text-white text-center" id="myModalLabel">
+								<b>Florida Dental Clinic</b>
+							</h4>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true" class="grey-text">&times;</span>
+							</button>
+						</div>
+						<!-- /modal-header -->
+						<!--Body-->
+						<div class="modal-body p-0">
+							<img src="img/downloaded/florida-dental-clinic.jpg" class="img-fluid" alt="Florida Dental Clinic" height="100%" width="100%">
+							<div class="px-5 py-3">
+								<h5 class='text-left mb-1'>Project Description:</h5>
+								<p class='mb-1'>...............</p>
+								<h5 class='text-left mb-1'>My Role in the Project:</h5>
+								<p class='mb-1'>...................</p>
+								<h5 class='text-left mb-1'>Technologies Used:</h5>
+								<ul class='text-left mb-1 list-inline'>
+									<li class='list-inline-item'>•HTML</li>
+									<li class='list-inline-item'>•CSS</li>
+									<li class='list-inline-item'>•SASS</li>
+									<li class='list-inline-item'>•jQuery</li>
+									<li class='list-inline-item'>•Javascript</li>
+									<li class='list-inline-item'>•Gulp.js</li>
+									<li class='list-inline-item text-white'>•Adobe Photoshop</li>
+								</ul>
+								<h5 class='text-left mb-1'>Project Launched in: &nbsp;&nbsp;&nbsp;
+									<span class='text-success'>Dec 2017</span>
+								</h5>
+								<h5 class='text-left mb-1'>Visit site:
+									<a href='http://florida-dental-clinic.arielbehar.com/' target='_blank'>Florida Dental Clinic</a>
+								</h5>
+							</div>
+						</div>
+						<!-- /modal-body -->
+						<!--Footer-->
+						<div class="modal-footer">
+							<button type="button" class="btn btn-lg primary-color-dark" data-dismiss="modal">Close</button>
+						</div>
+						<!-- /modal-footer -->
+					</div>
+					<!--/.Content-->
+				</div>
+				<!-- /modal-dialog -->
+			</div>
+			<!-- /Stylish Portfolio Modal -->
+
+
 			<!-- Stylish Portfolio Modal -->
 			<div class="modal fade psd-to-html-modal" id="stylish-portfolio-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
 			    aria-hidden="true">
@@ -607,16 +685,13 @@
 							<img src="img/downloaded/icons/wordpress.png" alt="Wordpress logo"> Wordpress
 						</div>
 						<div class="chip z-depth-5 green darken-2">
-							<img src="img/downloaded/icons/photoshop.png" alt="Github logo"> Photoshop
+							<img src="img/downloaded/icons/photoshop.png" alt="Photoshop logo"> Photoshop
 						</div>
 						<div class="chip z-depth-5 yellow darken-2">
 							<img src="img/downloaded/icons/illustrator-circle.png" alt="Adobe Illustrator logo"> Illustrator
 						</div>
 						<div class="chip z-depth-5 yellow darken-2">
 							<img src="img/downloaded/icons/git.png" alt="Git logo"> Git
-						</div>
-						<div class="chip z-depth-5 yellow darken-2">
-							<img src="img/downloaded/icons/github.jpg" alt="Github logo"> Github
 						</div>
 						<div class="chip z-depth-5 blue darken-2">
 							<img src="img/downloaded/icons/php.jpg" alt="PHP logo"> PHP
@@ -669,7 +744,17 @@
 									<!--Body-->
 									<div class="modal-body p-0">
 										<img src="img/downloaded/resume-onepage.jpg" class="img-fluid" alt="Resume" height="100%" width="100%">
-										<!-- 							                <img src="img/downloaded/resume2.jpg" class="img-fluid" alt="Resume" height="100%" width="100%"> -->
+										<h4 class="text-center my-2">Download My Resume</h4>
+										<div class="row mb-2">
+											<div class="col-6 col-md-3 offset-md-3  text-center">
+												<a href="content/resume.docx" target="_blank"><img src="img/downloaded/icons/word.png"></a>
+											</div>
+											<div class="col-6 col-md-3 text-center">
+												<a href="content/resume.pdf" target="_blank" >
+													<img src="img/downloaded/icons/pdf.png">
+												</a>
+											</div>
+										</div>							
 									</div>
 									<!-- /modal-body -->
 									<!--Footer-->
