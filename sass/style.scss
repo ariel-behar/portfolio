@@ -368,18 +368,18 @@ main {
 	}
 }
 
-@media (min-width: 768px) {
+@media (width: 768px) {
 	#psd-to-html-section #tv-pic {
-		top: 150px;
+		top: 125px;
 		video {
 			transform: rotate(-15deg);
 			top: 40px;
 		}
 	}
 }
-@media (min-width: 1024px) {
+@media (width: 1024px) {
 	#psd-to-html-section #tv-pic {
-		top: 140px;
+		top: 110px;
 	}
 }
 @media (min-width: 1200px) {
