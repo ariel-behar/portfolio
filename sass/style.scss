@@ -297,21 +297,57 @@ main {
 
 #second-section {
 	background: $pattern1;
-	.carousel-indicators {
-		.active {
-			transform: scale(1.2);
-			opacity: 1;
-		}
+	// .carousel-indicators {
+	// 	.active {
+	// 		transform: scale(1.2);
+	// 		opacity: 1;
+	// 	}
 		
-		li {
-			opacity: 0.7;
-			&:first-child {
-				display: none;
+	// 	li {
+	// 		opacity: 0.7;
+	// 		&:first-child {
+	// 			display: none;
 
+	// 		}
+	// 	}
+	// }
+	#carousel-thumb {
+		margin-bottom: 30px!important;
+	}
+	#thumbnails-carousel-4-thumbs, #thumbnails-carousel-3-thumbs {
+		margin-bottom: 0;
+
+		.carousel-inner {
+			ol {
+				text-align: center;
+				margin-top: 20px;
+				li {
+					width: 23%;
+					opacity: 0.7;
+					cursor: pointer;
+					&.active {
+						transform: scale(1.1);
+						opacity: 1;
+					}
+				}
+			}
+			#first-list-thumbnails {
+				li {
+					&:first-child {
+						display: none;
+					}
+				}
+			}
+		}
+		.controls-top {
+			margin-bottom: 0;
+			.btn-floating {
+				background-color: #575e69;
 			}
 		}
 	}
-	
+
+
 	#project-content{
 		background-color: rgba(0,0,0,0.3);	
 		border-radius: 20px;
